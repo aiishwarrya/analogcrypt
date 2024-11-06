@@ -2,18 +2,18 @@
 
 ![Project Header](images/analogcrypt1.png)
 
-> **Status:** 🚀 Completed  
+> **Status:**  Completed  
 > **Technology:** Open-Source Hardware Design, eSim, SKY130 PDK  
 > **Keywords:** Cryptography, XOR Gate, Analog Circuit Design, Data Security, SKY130
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 This project explores a **transistor-based XOR cryptographic circuit**, demonstrating how simple analog components can be configured to achieve data encryption and decryption. Built entirely with open-source tools, this project is a stepping stone towards hardware-based cryptography.
 
 ---
 
-### 📜 Table of Contents
+### Table of Contents
 - [Background](#background)
 - [Key Features](#key-features)
 - [Project Setup](#project-setup)
