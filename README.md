@@ -64,3 +64,43 @@ git clone https://github.com/yourusername/Analog-XOR-Cryptographic-Circuit.git
 cd Analog-XOR-Cryptographic-Circuit
 
 # Set up eSim workspace and import `src/jaishreeram.cir`
+
+## ⚙️ Circuit Architecture
+
+### Circuit Diagram
+![Circuit Diagram](images/circuit_schematic.png)
+
+The XOR gate is implemented using **NMOS** and **PMOS transistors** from the SKY130 library, designed for efficient data encryption and decryption.
+
+- **Transistor Models Used**:
+  - `sky130_fd_pr__nfet_01v8` (NMOS) and `sky130_fd_pr__pfet_01v8` (PMOS)
+- **Power Supply**: 1.8V provided through VDD
+- **Input Nodes**: `V(A)` and `V(B)` (manually set values to test the XOR functionality)
+- **Output Node**: `V(out)` (monitored to verify XOR operation)
+
+### Truth Table
+The XOR circuit behaves according to the following truth table, where the output toggles high only when the inputs differ.
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+| 0       | 0       | 0      |
+| 0       | 1       | 1      |
+| 1       | 0       | 1      |
+| 1       | 1       | 0      |
+
+### Transistor Connections
+
+- **NMOS Transistors**:
+  - `xsc1`: Connected between `V(out)` and ground (`gnd`), with gate connected to `net-sc1-pad2` (input `A`).
+  - `xsc2`: Connected between `V(out)` and ground (`gnd`), with gate connected to `net-sc2-pad2` (input `B`).
+
+- **PMOS Transistors**:
+  - `xsc3`: Connected between `V(out)` and `VDD`, with gate connected to `net-sc1-pad2` (input `A`).
+  - `xsc4`: Connected between `V(out)` and `VDD`, with gate connected to `net-sc2-pad2` (input `B`).
+
+This arrangement ensures that `V(out)` behaves according to XOR logic.
+
+---
+
+Ensure your circuit and simulation files are set up as described in this architecture. Proper connections and node assignments are essential for achieving the correct XOR operation.
+
