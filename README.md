@@ -99,9 +99,9 @@ The XOR circuit behaves according to the following truth table, where the output
 
 This arrangement ensures that `V(out)` behaves according to XOR logic.
 
-## 📐 Simulation Details
+## Simulation Details
 
-- **Tools Used**
+# **Tools Used**
 * eSim: For schematic creation and simulation management
 * NGSPICE: For running the transient analysis
 * SKY130 PDK: Open-source process design kit for transistor models
@@ -113,7 +113,7 @@ The circuit is simulated with the following parameters:
 * Inputs: V(A) and V(B) manually set to 0 and 1 to verify XOR logic
 * Simulation Time: 0.5 ms with a time step of 10 μs
 
-- **NGSPICE Commands**
+# **NGSPICE Commands**
 To plot the output of the XOR circuit along with inputs `A` and `B` in NGSPICE, use the following commands:
 ```
 * Define the transient analysis parameters
@@ -125,7 +125,7 @@ plot v(out) v(a) v(b)
 .endc
 ```
 
-- **Expected Results**
+# **Expected Results**
 The output `V(out)` should toggle between high (1.8V) and low (0V) according to the XOR truth table. This behavior confirms the correct operation of the XOR circuit for cryptographic purposes.
 
 ## **Results**
@@ -135,7 +135,8 @@ The simulation results illustrate the XOR operation:
 
 * **Input A** and **Input B** are high and low at various intervals.
 * The output toggles high only when the inputs differ, confirming XOR functionality.
-Performance Analysis
+  
+# **Performance Analysis**
 The analog XOR design demonstrates low power consumption and a reliable logic response, making it suitable for cryptographic applications in energy-sensitive devices.
 
 ## **Getting Started**
@@ -164,6 +165,7 @@ plot v(out) v(a) v(b)
 Analyze the plotted graph to verify XOR functionality.
 
 ## **Related Work**
+
 Explore more on analog XOR applications in cryptography and digital security:
 * Analog Cryptographic Hardware
 * XOR Gate Applications in Cryptography
