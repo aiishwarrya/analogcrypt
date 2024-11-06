@@ -103,5 +103,3 @@ This arrangement ensures that `V(out)` behaves according to XOR logic.
 
 ---
 
-Ensure your circuit and simulation files are set up as described in this architecture. Proper connections and node assignments are essential for achieving the correct XOR operation.
-
