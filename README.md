@@ -69,7 +69,7 @@ cd Analog-XOR-Cryptographic-Circuit
 # Set up eSim workspace and import `src/jaishreeram.cir`
 ```
 
-## ⚙️ Circuit Architecture
+## Circuit Architecture
 <div align="center">
   <img src="images/circuitdiagram-1.png" alt="Schematic" width="700" height="500">
 </div>
@@ -106,19 +106,19 @@ This arrangement ensures that `V(out)` behaves according to XOR logic.
 
 ## **Simulation Details**
 
-# Tools Used
+### Tools Used
 * eSim: For schematic creation and simulation management
 * NGSPICE: For running the transient analysis
 * SKY130 PDK: Open-source process design kit for transistor models
 
-## Simulation Setup
+### Simulation Setup
 
 The circuit is simulated with the following parameters:
 * Power Supply: 1.8V DC to VDD
 * Inputs: V(A) and V(B) manually set to 0 and 1 to verify XOR logic
 * Simulation Time: 0.5 ms with a time step of 10 μs
 
-## NGSPICE Commands
+### NGSPICE Commands
 To plot the output of the XOR circuit along with inputs `A` and `B` in NGSPICE, use the following commands:
 ```
 * Define the transient analysis parameters
@@ -130,7 +130,7 @@ plot v(out) v(a) v(b)
 .endc
 ```
 
-# **Expected Results**
+## **Expected Results**
 The output `V(out)` should toggle between high (1.8V) and low (0V) according to the XOR truth table. This behavior confirms the correct operation of the XOR circuit for cryptographic purposes.
 
 ## **Results**
