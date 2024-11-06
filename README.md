@@ -70,7 +70,9 @@ cd Analog-XOR-Cryptographic-Circuit
 ```
 
 ## ⚙️ Circuit Architecture
-![Circuit Diagram](images/circuit_schematic.png)
+<div align="center">
+  <img src="images/circuitdiagram-1.png" alt="Schematic" width="700" height="500">
+</div>
 
 The XOR gate is implemented using NMOS and PMOS transistors from the SKY130 library, designed for efficient data encryption and decryption.
 
