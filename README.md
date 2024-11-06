@@ -94,15 +94,24 @@ The XOR circuit behaves according to the following truth table, where the output
 
 ### Transistor Connections
 
-- **NMOS Transistors**:
-  - `xsc1`: Connected between `V(out)` and ground (`gnd`), with gate connected to `net-sc1-pad2` (input `A`).
-  - `xsc2`: Connected between `V(out)` and ground (`gnd`), with gate connected to `net-sc2-pad2` (input `B`).
+This configuration uses **PMOS** and **NMOS** transistors with specific connections to achieve XOR logic. Each transistor has four terminals: **Source**, **Drain**, **Gate**, and **Bulk**. Here are the exact connections:
 
-- **PMOS Transistors**:
-  - `xsc3`: Connected between `V(out)` and `VDD`, with gate connected to `net-sc1-pad2` (input `A`).
-  - `xsc4`: Connected between `V(out)` and `VDD`, with gate connected to `net-sc2-pad2` (input `B`).
+| Transistor | Source           | Drain                             | Gate      | Bulk           |
+|------------|-------------------|-----------------------------------|-----------|----------------|
+| **PMOS1**  | V_DD (1.8V)      | Connects to NMOS2 Drain           | Input A   | V_DD (1.8V)    |
+| **PMOS2**  | V_DD (1.8V)      | Connects to NMOS1 Drain           | Input B   | V_DD (1.8V)    |
+| **NMOS1**  | Ground (0V)      | Connects to PMOS2 Drain           | Input A   | Ground (0V)    |
+| **NMOS2**  | Ground (0V)      | Connects to PMOS1 Drain           | Input B   | Ground (0V)    |
 
-This arrangement ensures that `V(out)` behaves according to XOR logic.
+### Summary of Connections
+- **V_DD**: 1.8V power supply.
+- **Ground**: 0V (ground).
+- **Input A** and **Input B**: XOR circuit inputs.
+- **Drain Connections**: 
+  - **PMOS1 Drain** connects to **NMOS2 Drain**.
+  - **PMOS2 Drain** connects to **NMOS1 Drain**.
+
+This setup provides the precise connections required for the XOR logic in your cryptographic circuit, with each transistor correctly oriented for optimal performance.
 
 ## **Simulation Details**
 
