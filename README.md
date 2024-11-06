@@ -64,6 +64,7 @@ git clone https://github.com/yourusername/Analog-XOR-Cryptographic-Circuit.git
 cd Analog-XOR-Cryptographic-Circuit
 
 # Set up eSim workspace and import `src/jaishreeram.cir`
+```
 
 ## ⚙️ Circuit Architecture
 
