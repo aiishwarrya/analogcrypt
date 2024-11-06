@@ -1,6 +1,9 @@
 # Analog XOR-Based Cryptographic Circuit for Efficient Data Encryption and Decryption
 
-![Project Header](images/analogcrypt1.png)
+<div align="center">
+  <img src="images/analogcrypt1.png" alt="Cryptography" width="500" height="300">
+</div>
+
 
 > **Status:**  Completed  
 > **Technology:** Open-Source Hardware Design, eSim, SKY130 PDK  
