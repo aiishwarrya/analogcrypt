@@ -115,6 +115,7 @@ This setup provides the precise connections required for the XOR logic in your c
 
 ## Performance Parameters for Analog XOR-Based Cryptographic Circuit
 
+
 | Parameter              | Description                                             | Expected Value          |
 |------------------------|---------------------------------------------------------|-------------------------|
 | **Power Consumption**  | Total power consumed by the circuit during operation.   | ~1.2 µW (estimated)     |
