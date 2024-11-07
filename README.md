@@ -16,9 +16,12 @@ This project demonstrates how simple analog components can achieve data encrypti
 ---
 
 ## Technical Explaination
+<p align="justify">
 In the XOR cryptographic circuit, the cipher key acts as a binary sequence used to encrypt and decrypt data. This key is combined with the data input using XOR logic, where each bit of the key is XORed with the corresponding bit of the data. If the key is the same during both encryption and decryption, the output will toggle back to the original data, enabling reversible encryption.
 
 The output of the circuit reflects this XOR operation: it will be high (logical 1) when the bits of the data and key differ, and low (logical 0) when they match. Thus, the encrypted output is entirely dependent on the key, making it critical to the security of the system. This approach offers a lightweight, hardware-based cryptographic method, ideal for applications where simplicity and low power consumption are essential.
+</p>
+---
 
 ### Table of Contents
 - [Background](#background)
