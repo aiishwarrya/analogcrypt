@@ -24,6 +24,7 @@ This project demonstrates how simple analog components can achieve data encrypti
 - [Simulation Details](#simulation-details)
 - [Results & Analysis](#results--analysis)
 - [Related Work](#related-work)
+- [Future Scope](#Future-Scope)
 
 ---
 
@@ -247,5 +248,9 @@ In summary, this analog XOR circuit provides a combination of low power consumpt
 Explore more on analog XOR applications in cryptography and digital security:
 
 - [Analog Cryptographic Hardware](https://example.com/analog-cryptographic-hardware)
-- [XOR Gate Applications in Cryptography](https://example.com/xor-gate-applications)
+- [XOR Gate Applications in Cryptography](https://example.com/xor-gate-applications)y
+
+---
+
+## **Future Scope**
 
