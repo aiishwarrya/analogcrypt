@@ -204,23 +204,27 @@ The analog XOR design demonstrates low power consumption and a reliable logic re
 
 ## **Getting Started**
 
-- **Prerequisites**
-* eSim: Download here to set up your simulation environment.
-* NGSPICE: For circuit simulation within eSim.
-* SKY130 PDK: Ensure it's properly installed in your eSim library path.
-  
-- **Installation**
-  
-1. Clone this repository:
-```
-git clone https://github.com/yourusername/analog-xor-cryptographic-circuit.git
-```
+To set up and simulate the **Analog XOR-Based Cryptographic Circuit**, follow the steps below.
+
+### **Prerequisites**
+Make sure you have the following software and libraries installed:
+
+- **eSim**: Download and install [eSim](https://esim.fossee.in) to set up your simulation environment.
+- **NGSPICE**: Required for circuit simulation within eSim.
+- **SKY130 PDK**: Ensure the SKY130 model library is correctly set up in your eSim library path for compatibility.
+
+### **Installation Steps**
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/analog-xor-cryptographic-circuit.git
+
 2. Open the project in eSim.
 3. Load the provided netlist and set up the SKY130 models.
 
-- **Running the Simulation**
+### **Running the Simulation**
 1. Open the terminal in eSim.
-2. Load the netlist and type the following commands:
+2. **Load the netlist and type the following commands**:
 ```
 .tran 10u 0.5m
 plot v(out) v(a) v(b)
