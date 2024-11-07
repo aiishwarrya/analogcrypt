@@ -32,6 +32,7 @@ The output of the circuit reflects this XOR operation: it will be high (logical 
 - [Performance Parameters](#performance-parameters)
 - [Simulation Details](#simulation-details)
 - [Perfomance Analysis](#performance-analysis)
+- [Expected Results](#expected-results)
 - [Related Work](#related-work)
 - [Future Scope](#future-scope)
 
