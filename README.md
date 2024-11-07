@@ -196,6 +196,8 @@ The following simulation waveforms illustrate the XOR operation for each input c
 - **Red (netA)**: `Input A`
 - **Blue (netB)**: `Input B`
 - **Green (Vout)**: Output of the XOR operation
+
+### Transient Analysis
   
 The transient analysis was performed with a time step of 10 μs over a 0.5 ms duration, capturing the dynamic response of the circuit as inputs toggle. This analysis allows us to observe the XOR logic as it switches the output state based on the values of inputs A and B, validating the expected XOR truth table behavior.
 
@@ -225,6 +227,23 @@ With `Input A` as **high (1)** and `Input B` as **low (0)**, the output toggles 
 </div>
 
 In this case, both `Input A` and `Input B` are **high (1)**. The output remains **low (0)**, confirming XOR functionality.
+
+### DC Analysis
+
+The DC analysis was performed by sweeping input VIN1 from 0V to 1.8V in steps of 0.1V, while keeping VIN2 fixed at a particular value (e.g., 0V, 1.8V) based on the XOR logic conditions. This approach allows us to observe the circuit's steady-state output behavior for different combinations of input voltages, validating the XOR gate functionality as it meets the expected truth table values.
+
+In this analysis, the output voltage (V_out) is measured to confirm that the output is high only when VIN1 and VIN2 differ, accurately implementing the XOR operation. The results provide a clear visualization of the XOR functionality across various input conditions in a static (DC) state.
+
+### **Waveform for Input (01)**
+<div align="center">
+  <img src="dcanalysis1.png" alt="output" width="700" height="500">
+</div>
+
+<div align="center">
+  <img src="dcanalysis2.png" alt="output" width="700" height="500">
+</div>
+
+
 
 ## **Conclusion**
 The simulation results confirm that the circuit accurately performs XOR logic. This functionality is critical for data encryption and decryption in analog cryptographic circuits. The four output waveforms validate the XOR operation for each input combination, proving the circuit’s suitability for use in hardware cryptography applications.
