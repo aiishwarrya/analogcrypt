@@ -4,15 +4,14 @@
   <img src="images/analogcrypt1.png" alt="Cryptography" width="500" height="300">
 </div>
 
-
-> **Status:**  Completed  
+> **Status:** Completed  
 > **Technology:** Open-Source Hardware Design, eSim, SKY130 PDK  
 > **Keywords:** Cryptography, XOR Gate, Analog Circuit Design, Data Security, SKY130
 
 ---
 
-##  Project Objective
-This project explores a **transistor-based XOR cryptographic circuit**, demonstrating how simple analog components can be configured to achieve data encryption and decryption. Built entirely with open-source tools, this project is a stepping stone towards hardware-based cryptography.
+## Project Objective
+This project demonstrates how simple analog components can achieve data encryption and decryption through a **transistor-based XOR cryptographic circuit**. Built with open-source tools, this project explores the potential for hardware-based cryptography.
 
 ---
 
@@ -21,33 +20,27 @@ This project explores a **transistor-based XOR cryptographic circuit**, demonstr
 - [Key Features](#key-features)
 - [Project Setup](#project-setup)
 - [Circuit Architecture](#circuit-architecture)
-- [Simulation & Verification](#simulation--verification)
+- [Performance Parameters](#performance-parameters)
+- [Simulation Details](#simulation-details)
 - [Results & Analysis](#results--analysis)
-- [Future Directions](#future-directions)
-- [Project Demo](#project-demo)
-- [Contributions](#contributions)
-- [License](#license)
+- [Getting Started](#getting-started)
+- [Related Work](#related-work)
 
 ---
 
 ## Background
-Hardware-based cryptography offers enhanced security over software encryption methods. In this project, we leverage XOR logic, a fundamental operation in many encryption algorithms, to create a compact, efficient, and low-power cryptographic circuit that can be adapted for various security applications. 
+Hardware-based cryptography provides a secure alternative to software encryption methods. This project leverages XOR logic—a critical operation in encryption algorithms—for a compact, efficient, and low-power cryptographic circuit. 
 
 ### Why XOR?
-The XOR operation is widely used in cryptography for its unique property: `A XOR B XOR A = B`. This allows for simple encryption and decryption mechanisms by merely toggling input values.
+The XOR operation is central in cryptography due to its reversible property: `A XOR B XOR A = B`. This allows simple encryption and decryption by toggling input values.
 
 ---
 
 ## Key Features
 
-### ✅ Open-Source Friendly
-- **eSim and SKY130 PDK**: Built entirely with FOSS, encouraging accessibility.
-
-### ✅ Efficient Design
-- **Optimized Circuitry**: Simple yet effective cryptographic method using analog components.
-
-### ✅ Real-Time Encryption
-- **XOR Logic**: Demonstrates XOR encryption/decryption, a staple of cryptographic operations.
+- **Open-Source Friendly**: Built using eSim and SKY130 PDK, making it accessible to all.
+- **Efficient Design**: Simple and effective cryptographic method using analog components.
+- **Real-Time Encryption**: Implements XOR encryption/decryption, fundamental in cryptographic operations.
 
 ---
 
@@ -56,7 +49,7 @@ The XOR operation is widely used in cryptography for its unique property: `A XOR
 ### Prerequisites
 - **Software**: [eSim](https://esim.fossee.in/) with SKY130 PDK installed
 - **Simulation Tool**: NGSpice
-- **Hardware Requirements**: None (entirely simulated)
+- **Hardware Requirements**: None (simulation-only project)
 
 ### Installation
 ```bash
