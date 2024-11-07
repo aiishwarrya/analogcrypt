@@ -231,8 +231,10 @@ plot v(out) v(a) v(b)
 ```
 Analyze the plotted graph to verify XOR functionality.
 
-## **Related Work**
+## Related Work
 
 Explore more on analog XOR applications in cryptography and digital security:
-* Analog Cryptographic Hardware
-* XOR Gate Applications in Cryptography
+
+- [Analog Cryptographic Hardware](https://example.com/analog-cryptographic-hardware)
+- [XOR Gate Applications in Cryptography](https://example.com/xor-gate-applications)
+
