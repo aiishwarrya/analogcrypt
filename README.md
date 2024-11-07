@@ -121,7 +121,7 @@ This configuration uses **PMOS** and **NMOS** transistors with specific connecti
 
 This setup provides the precise connections required for the XOR logic in your cryptographic circuit, with each transistor correctly oriented for optimal performance.
 
-## Performance Parameters for Analog XOR-Based Cryptographic Circuit
+## Performance Parameters
 
 
 | Parameter              | Description                                             | Expected Value          |
@@ -238,7 +238,6 @@ The analog XOR-based cryptographic circuit presents several performance benefits
    - **Wearable Technology**: Wearables often operate on limited battery life and require lightweight, secure encryption mechanisms. This analog XOR circuit meets these constraints while providing a foundational cryptographic function.
    - **Portable Medical Devices**: Medical monitoring devices, particularly wearables for health tracking, benefit from the circuit’s low power and reliable operation for secure data transmission.
 
-### Conclusion
 In summary, this analog XOR circuit provides a combination of low power consumption, reliable performance, and adaptability, making it highly suitable for cryptographic functions in devices with limited energy budgets. Its stable output response and efficient data handling capabilities align it perfectly with modern security needs in energy-sensitive applications, underscoring its potential in next-generation cryptographic hardware.
 
 ---
@@ -266,9 +265,25 @@ This project lays the foundation for more advanced analog cryptographic designs 
 
 - **Extended Logic Functionality**: Build upon this XOR design to create a complete set of cryptographic logic gates, enabling complex encryption/decryption operations in analog hardware.
 
-- **Performance Benchmarking**: Implement a performance benchmarking framework to compare latency, power consumption, and security efficacy against digital XOR-based cryptographic methods.
+- **Performance Benchmarking**: Implement a performance benchmarking framework to compare latency, power consumption, and security efficacy against digital XOR-based cryptographic methods. 
+
+By advancing in these areas, the analog XOR-based cryptographic circuit can evolve into a more comprehensive solution for secure data transmission in low-power and resource-constrained devices.
 
 ---
+### **Acknowledgments**
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Anagha Ghosh, Educational Proffesional, VSD Corp. Pvt. Ltd.
+- Sumanto Kar, Assistant Project Manager, FOSSEE.
+---
+
+### Contact Information
+
+- Aishwarya Joshi, Undergraduate Student, Nitte Meenakshi Institute of Technology, aishwarya17.joshi@gmail.com.
+---
+
+
+
 
 
 
