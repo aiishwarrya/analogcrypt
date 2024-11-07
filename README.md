@@ -159,13 +159,38 @@ plot v(out) v(a) v(b)
 ## **Expected Results**
 The output `V(out)` should toggle between high (1.8V) and low (0V) according to the XOR truth table. This behavior confirms the correct operation of the XOR circuit for cryptographic purposes.
 
-## **Results**
-![Output Waveform](images/output.png)
+## **Simulation Results**
 
-The simulation results illustrate the XOR operation:
+The following simulation waveforms illustrate the XOR operation for each input combination (00, 01, 10, 11). In each graph, the three lines represent:
 
-* **Input A** and **Input B** are high and low at various intervals.
-* The output toggles high only when the inputs differ, confirming XOR functionality.
+- **Red (netA)**: `Input A`
+- **Blue (netB)**: `Input B`
+- **Green (Vout)**: Output of the XOR operation
+
+### **Waveform for Input (00)**
+![Output Waveform 00](images/output_00.png)
+
+In this case, both `Input A` and `Input B` are **low (0)**. As expected, the output remains **low**.
+
+### **Waveform for Input (01)**
+![Output Waveform 01](images/output_01.png)
+
+Here, `Input A` is **low (0)**, and `Input B` is **high (1)**. The output toggles to **high (1)**, confirming XOR functionality.
+
+### **Waveform for Input (10)**
+![Output Waveform 10](images/output_10.png)
+
+With `Input A` as **high (1)** and `Input B` as **low (0)**, the output toggles to **high (1)**.
+
+### **Waveform for Input (11)**
+![Output Waveform 11](images/output_11.png)
+
+In this case, both `Input A` and `Input B` are **high (1)**. The output remains **low (0)**, confirming XOR functionality.
+
+## **Conclusion**
+The simulation results confirm that the circuit accurately performs XOR logic. This functionality is critical for data encryption and decryption in analog cryptographic circuits. The four output waveforms validate the XOR operation for each input combination, proving the circuit’s suitability for use in hardware cryptography applications.
+
+---
   
 ## **Performance Analysis**
 The analog XOR design demonstrates low power consumption and a reliable logic response, making it suitable for cryptographic applications in energy-sensitive devices.
