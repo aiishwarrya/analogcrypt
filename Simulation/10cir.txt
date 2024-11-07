@@ -8,8 +8,8 @@
 VDD v_dd 0 DC 1.8                 ; Define the power supply voltage (1.8V)
 
 * Define Constant Inputs for XOR gate (1, 1)
-VIN1 netA 0 DC 0                  ; Constant input for Input A
-VIN2 netB 0 DC 1.8                ; Constant input for Input B
+VIN1 netA 0 DC 1.8                ; Constant input for Input A
+VIN2 netB 0 DC 0                  ; Constant input for Input B
 
 * NMOS Transistor Definitions (for XOR Gate)
 xsc1 out netA gnd gnd sky130_fd_pr__nfet_01v8  ; NMOS1
