@@ -199,7 +199,7 @@ The simulation results confirm that the circuit accurately performs XOR logic. T
 
 ---
   
-## 📝 Performance Analysis
+## **Performance Analysis**
 
 The analog XOR-based cryptographic circuit presents several performance benefits, making it ideal for secure, low-power applications:
 
