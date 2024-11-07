@@ -168,22 +168,29 @@ The following simulation waveforms illustrate the XOR operation for each input c
 - **Green (Vout)**: Output of the XOR operation
 
 ### **Waveform for Input (00)**
-![Output Waveform 00](images/output_00.png)
+<div align="center">
+  <img src="images/00.png" alt="output_00" width="700" height="500">
+</div>
 
 In this case, both `Input A` and `Input B` are **low (0)**. As expected, the output remains **low**.
 
 ### **Waveform for Input (01)**
-![Output Waveform 01](images/output_01.png)
-
+<div align="center">
+  <img src="images/01.png" alt="output_01" width="700" height="500">
+</div>
 Here, `Input A` is **low (0)**, and `Input B` is **high (1)**. The output toggles to **high (1)**, confirming XOR functionality.
 
 ### **Waveform for Input (10)**
-![Output Waveform 10](images/output_10.png)
+<div align="center">
+  <img src="images/10.png" alt="output_10" width="700" height="500">
+</div>
 
 With `Input A` as **high (1)** and `Input B` as **low (0)**, the output toggles to **high (1)**.
 
 ### **Waveform for Input (11)**
-![Output Waveform 11](images/output_11.png)
+<div align="center">
+  <img src="images/11.png" alt="output_11" width="700" height="500">
+</div>
 
 In this case, both `Input A` and `Input B` are **high (1)**. The output remains **low (0)**, confirming XOR functionality.
 
