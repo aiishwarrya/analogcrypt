@@ -288,6 +288,7 @@ The analog XOR-based cryptographic circuit presents several performance benefits
 
 In summary, this analog XOR circuit provides a combination of low power consumption, reliable performance, and adaptability, making it highly suitable for cryptographic functions in devices with limited energy budgets. Its stable output response and efficient data handling capabilities align it perfectly with modern security needs in energy-sensitive applications, underscoring its potential in next-generation cryptographic hardware.
 </p>
+
 ---
 
 ## Related Work
@@ -319,17 +320,21 @@ This project lays the groundwork for advanced analog cryptographic designs and o
 
 Through these advancements, the analog XOR-based cryptographic circuit could become a versatile and powerful building block in secure, low-power data transmission across IoT, healthcare, and quantum-resilient cryptographic technologies.
 </p>
+
 ---
+
 ### **Acknowledgments**
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Anagha Ghosh, Educational Proffesional, VSD Corp. Pvt. Ltd.
 - Sumanto Kar, Assistant Project Manager, FOSSEE.
+  
 ---
 
 ### Contact Information
 
 - Aishwarya Joshi, Undergraduate Student, Nitte Meenakshi Institute of Technology, aishwarya17.joshi@gmail.com.
+  
 ---
 
 
