@@ -1,0 +1,35 @@
+* c:\users\hp\esim-workspace\jaishreeram\jaishreeram.cir
+* FOR INPUT 1 AND 0
+
+* Include the SKY130 PDK library
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+
+* Define Voltage Sources for Power Supply and Inputs
+VDD v_dd 0 DC 1.8                 ; Define the power supply voltage (1.8V)
+
+* Define Constant Inputs for XOR gate (1, 1)
+VIN1 netA 0 DC 0                  ; Constant input for Input A
+VIN2 netB 0 DC 1.8                ; Constant input for Input B
+
+* NMOS Transistor Definitions (for XOR Gate)
+xsc1 out netA gnd gnd sky130_fd_pr__nfet_01v8  ; NMOS1
+xsc2 out netB gnd gnd sky130_fd_pr__nfet_01v8  ; NMOS2 
+
+* PMOS Transistor Definitions (for XOR Gate)
+xsc3 out netA v_dd v_dd sky130_fd_pr__pfet_01v8  ; PMOS1
+xsc4 out netB v_dd v_dd sky130_fd_pr__pfet_01v8  ; PMOS2 
+
+* Simulation Command: Define Transient Analysis
+.tran 1n 2m                     ; Transient analysis with timestep of 1ns and stop time of 2ms
+
+* Save the Input and Output Voltages
+.save v(out) v(netA) v(netB)
+
+* Control Statements for Simulation and Output Plotting
+.control
+run
+plot v(out) v(netA) v(netB)  ; Plot the output and both inputs
+.endc
+
+* End of Circuit Definition
+.end
