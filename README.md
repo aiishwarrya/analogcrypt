@@ -196,6 +196,8 @@ The following simulation waveforms illustrate the XOR operation for each input c
 - **Red (netA)**: `Input A`
 - **Blue (netB)**: `Input B`
 - **Green (Vout)**: Output of the XOR operation
+  
+The transient analysis was performed with a time step of 10 μs over a 0.5 ms duration, capturing the dynamic response of the circuit as inputs toggle. This analysis allows us to observe the XOR logic as it switches the output state based on the values of inputs A and B, validating the expected XOR truth table behavior.
 
 ### **Waveform for Input (00)**
 <div align="center">
