@@ -21,6 +21,7 @@ In the XOR cryptographic circuit, the cipher key acts as a binary sequence used 
 
 The output of the circuit reflects this XOR operation: it will be high (logical 1) when the bits of the data and key differ, and low (logical 0) when they match. Thus, the encrypted output is entirely dependent on the key, making it critical to the security of the system. This approach offers a lightweight, hardware-based cryptographic method, ideal for applications where simplicity and low power consumption are essential.
 </p>
+
 ---
 
 ### Table of Contents
@@ -30,9 +31,9 @@ The output of the circuit reflects this XOR operation: it will be high (logical 
 - [Circuit Architecture](#circuit-architecture)
 - [Performance Parameters](#performance-parameters)
 - [Simulation Details](#simulation-details)
-- [Results & Analysis](#results--analysis)
+- [Perfomance Analysis](#performance-analysis)
 - [Related Work](#related-work)
-- [Future Scope](#Future-Scope)
+- [Future Scope](#future-scope)
 
 ---
 
