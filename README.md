@@ -173,7 +173,7 @@ plot v(out) v(a) v(b)
 ```
 
 ## **Expected Results**
-
+<p align="justify">
 When the inputs are applied to the gates of the transistors, the combination of NMOS and PMOS pairs is arranged so that the `V(out)` node behaves according to XOR logic. Specifically, if both `V(A)` and `V(B)` are at the same voltage level (either both high or both low), the configuration ensures that V(out) is pulled to a low state (0V). This occurs because either both NMOS transistors conduct, grounding the output, or both PMOS transistors do not conduct, isolating the output from VDD.
 
 However, if the inputs `V(A)` and `V(B)` differ (one high, one low), the transistor configuration allows the output `V(out)` to be pulled high (1.8V). For example, if `V(A)` is high and `V(B)` is low, only one of the NMOS transistors conducts, isolating the output from the ground, while one of the PMOS transistors conducts, connecting `V(out)` to `VDD`. This dual-conductance setup is what enables the output to reach a high state only when the inputs differ, aligning precisely with XOR logic.
@@ -187,6 +187,7 @@ This arrangement confirms that the output V(out) toggles in a predictable manner
 This toggling is crucial in cryptographic applications, where XOR gates introduce necessary variability in data encryption. Thus, by implementing this XOR behavior at the transistor level with analog components, your design achieves efficient encryption functionality while remaining energy-efficient and low-power, which is essential for cryptographic hardware in resource-constrained devices.
 
 This expected behavior not only validates the circuit’s functional accuracy but also ensures its reliability in real-world cryptographic systems.
+</p>
 
 ## **Simulation Results**
 
