@@ -268,7 +268,6 @@ This project lays the foundation for more advanced analog cryptographic designs 
 
 - **Performance Benchmarking**: Implement a performance benchmarking framework to compare latency, power consumption, and security efficacy against digital XOR-based cryptographic methods.
 
-By advancing in these areas, the analog XOR-based cryptographic circuit can evolve into a more comprehensive solution for secure data transmission in low-power and resource-constrained devices.
 ---
 
 
