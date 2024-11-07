@@ -68,7 +68,7 @@ cd Analog-XOR-Cryptographic-Circuit
 
 ### **Running the Simulation**
 1. Open the terminal in eSim.
-2. **Load the netlist and type the following commands**:
+2. Load the netlist and type the following commands:
 ```
 .tran 10u 0.5m
 plot v(out) v(a) v(b)
@@ -87,8 +87,8 @@ The XOR gate is implemented using NMOS and PMOS transistors from the SKY130 libr
 - **Transistor Models Used**:
   - `sky130_fd_pr__nfet_01v8` (NMOS) and `sky130_fd_pr__pfet_01v8` (PMOS)
 - **Power Supply**: 1.8V provided through VDD
-- **Input Nodes**: `V(A)` and `V(B)` (manually set values to test the XOR functionality)
-- **Output Node**: `V(out)` (monitored to verify XOR operation)
+- **Input Nodes**: `A` and `B` (manually set values to test the XOR functionality)
+- **Output Node**: `out` (monitored to verify XOR operation)
 
 ### Truth Table
 The XOR circuit behaves according to the following truth table, where the output toggles high only when the inputs differ.
@@ -105,7 +105,7 @@ The XOR circuit behaves according to the following truth table, where the output
 This configuration uses **PMOS** and **NMOS** transistors with specific connections to achieve XOR logic. Each transistor has four terminals: **Source**, **Drain**, **Gate**, and **Bulk**. Here are the exact connections:
 
 | Transistor | Source           | Drain                             | Gate      | Bulk           |
-|------------|-------------------|-----------------------------------|-----------|----------------|
+|------------|------------------|-----------------------------------|-----------|----------------|
 | **PMOS1**  | V_DD (1.8V)      | Connects to NMOS2 Drain           | Input A   | V_DD (1.8V)    |
 | **PMOS2**  | V_DD (1.8V)      | Connects to NMOS1 Drain           | Input B   | V_DD (1.8V)    |
 | **NMOS1**  | Ground (0V)      | Connects to PMOS2 Drain           | Input A   | Ground (0V)    |
@@ -119,7 +119,7 @@ This configuration uses **PMOS** and **NMOS** transistors with specific connecti
   - **PMOS1 Drain** connects to **NMOS2 Drain**.
   - **PMOS2 Drain** connects to **NMOS1 Drain**.
 
-This setup provides the precise connections required for the XOR logic in your cryptographic circuit, with each transistor correctly oriented for optimal performance.
+This setup provides the precise connections required for the XOR logic in the cryptographic circuit, with each transistor correctly oriented for optimal performance.
 
 ## Performance Parameters
 
@@ -135,6 +135,7 @@ This setup provides the precise connections required for the XOR logic in your c
 | **Encryption Accuracy**| XOR logic accuracy for cryptographic application.       | 100%                    |
 
 ### Parameter Details
+
 - **Power Consumption**: Crucial for low-power applications, especially in portable cryptographic devices.
 - **Propagation Delay**: Important for ensuring timely data encryption and decryption.
 - **Operating Frequency**: Higher frequencies support faster data processing.
