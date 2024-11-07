@@ -1,0 +1,34 @@
+* XOR Circuit with Direct DC Inputs for (0, 1) Condition using DC Sweep
+
+* Include the SKY130 PDK library
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+
+* Define Voltage Source for Power Supply (1.8V)
+VDD v_dd 0 DC 1.8                ; Define the power supply voltage (1.8V)
+
+* Define DC Inputs for XOR Testing (0, 1) Condition
+VIN1 netA 0 DC 0                 ; Input A set to 0V
+VIN2 netB 0 DC 1.8               ; Input B set to 1.8V
+
+* NMOS Transistor Definitions (for XOR Gate)
+xsc1 out netA gnd gnd sky130_fd_pr__nfet_01v8  ; NMOS1
+xsc2 out netB gnd gnd sky130_fd_pr__nfet_01v8  ; NMOS2 
+
+* PMOS Transistor Definitions (for XOR Gate)
+xsc3 out netA v_dd v_dd sky130_fd_pr__pfet_01v8  ; PMOS1
+xsc4 out netB v_dd v_dd sky130_fd_pr__pfet_01v8  ; PMOS2 
+
+* Simulation Command: DC Sweep for Steady-State Output
+.DC VIN1 0 1.8 0.1                ; Perform a DC sweep for VIN1 to simulate stable output
+
+* Save the Input and Output Voltages
+.save v(out) v(netA) v(netB)
+
+* Control Statements for Simulation and Output Plotting
+.control
+run
+plot v(out) linewidth=3            ; Plot output with thicker line
+.endc
+
+* End of Circuit Definition
+.end
