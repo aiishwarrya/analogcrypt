@@ -235,12 +235,13 @@ The DC analysis was performed by sweeping input VIN1 from 0V to 1.8V in steps of
 In this analysis, the output voltage (V_out) is measured to confirm that the output is high only when VIN1 and VIN2 differ, accurately implementing the XOR operation. The results provide a clear visualization of the XOR functionality across various input conditions in a static (DC) state.
 
 ### **Waveform for Input (01)**
+
 <div align="center">
-  <img src="dcanalysis1.png" alt="output" width="700" height="500">
+  <img src="images/dcanalysis1.png" alt="output1" width="700" height="500">
 </div>
 
 <div align="center">
-  <img src="dcanalysis2.png" alt="output" width="700" height="500">
+  <img src="images/dcanalysis2.png" alt="output2" width="700" height="500">
 </div>
 
 
