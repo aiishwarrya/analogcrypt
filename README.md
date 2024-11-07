@@ -263,7 +263,7 @@ The simulation results confirm that the circuit accurately performs XOR logic. T
 ---
   
 ## **Performance Analysis**
-
+<p align="justify">
 The analog XOR-based cryptographic circuit presents several performance benefits, making it ideal for secure, low-power applications:
 
 ### 1. **Low Power Consumption**
@@ -287,7 +287,7 @@ The analog XOR-based cryptographic circuit presents several performance benefits
    - **Portable Medical Devices**: Medical monitoring devices, particularly wearables for health tracking, benefit from the circuit’s low power and reliable operation for secure data transmission.
 
 In summary, this analog XOR circuit provides a combination of low power consumption, reliable performance, and adaptability, making it highly suitable for cryptographic functions in devices with limited energy budgets. Its stable output response and efficient data handling capabilities align it perfectly with modern security needs in energy-sensitive applications, underscoring its potential in next-generation cryptographic hardware.
-
+</p>
 ---
 
 ## Related Work
@@ -300,7 +300,7 @@ Explore more on analog XOR applications in cryptography and digital security:
 ---
 
 ## Future Scope
-
+<p align="justify">
 This project lays the groundwork for advanced analog cryptographic designs and opens up possibilities for future enhancements in the following areas:
 
 - **Power Optimization**: Further power reduction can be achieved by exploring alternative transistor configurations or implementing ultra-low-power analog techniques, making the design ideal for ultra-low-power IoT and wearable applications.
@@ -318,7 +318,7 @@ This project lays the groundwork for advanced analog cryptographic designs and o
 - **Advancing Cryptographic Applications**: Analog cryptographic circuits are positioned to address emerging security demands in quantum-resilient cryptography. By combining analog techniques with quantum-safe algorithms, future designs may enhance cryptographic resilience in lightweight and high-security applications, broadening their role in secure data transmission for next-generation cryptographic hardware solutions.
 
 Through these advancements, the analog XOR-based cryptographic circuit could become a versatile and powerful building block in secure, low-power data transmission across IoT, healthcare, and quantum-resilient cryptographic technologies.
-
+</p>
 ---
 ### **Acknowledgments**
 
