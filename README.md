@@ -237,7 +237,7 @@ In this analysis, the output voltage (V_out) is measured to confirm that the out
 ### **Waveform for Input (01)**
 
 <div align="center">
-  <img src="images/dcanalysis1.png" alt="output1" width="700" height="500">
+  <img src="images/dcanalyisis1.png" alt="output1" width="700" height="500">
 </div>
 
 <div align="center">
