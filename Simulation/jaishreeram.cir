@@ -1,0 +1,20 @@
+* C:\Users\HP\eSim-Workspace\jaishreeram\jaishreeram.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 11/8/2024 9:35:57 AM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC2  OUT B GND GND sky130_fd_pr__nfet_01v8		
+SC3  OUT A V_DD V_DD sky130_fd_pr__pfet_01v8		
+SC4  OUT B V_DD V_DD sky130_fd_pr__pfet_01v8		
+SCV3  V_DD GND 1.8		
+SCV4  V_DD GND 1.8		
+SCV1  A GND 1.8		
+SCV2  B GND 1.8		
+U1  OUT plot_v1		
+sc1  SKY130mode		
+SC1  OUT A GND GND sky130_fd_pr__nfet_01v8		
+
+.end
