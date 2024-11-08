@@ -212,27 +212,27 @@ The following simulation waveforms illustrate the XOR operation for each input c
   
 The transient analysis was performed with a time step of 10 μs over a 0.5 ms duration, capturing the dynamic response of the circuit as inputs toggle. This analysis allows us to observe the XOR logic as it switches the output state based on the values of inputs A and B, validating the expected XOR truth table behavior.
 
-### **Waveform for Input (00)**
+### **Waveform for Input (00) and output 0**
 <div align="center">
   <img src="images/00.png" alt="output_00" width="700" height="500">
 </div>
 
 In this case, both `Input A` and `Input B` are **low (0)**. As expected, the output remains **low**.
 
-### **Waveform for Input (01)**
+### **Waveform for Input (01) and output 1.8**
 <div align="center">
   <img src="images/01 (2).png" alt="output_01" width="700" height="500">
 </div>
 Here, `Input A` is **low (0)**, and `Input B` is **high (1)**. The output toggles to **high (1)**, confirming XOR functionality.
 
-### **Waveform for Input (10)**
+### **Waveform for Input (10) and output 1.8**
 <div align="center">
   <img src="images/10 (2).png" alt="output_10" width="700" height="500">
 </div>
 
 With `Input A` as **high (1)** and `Input B` as **low (0)**, the output toggles to **high (1)**.
 
-### **Waveform for Input (11)**
+### **Waveform for Input (11) and output 0**
 <div align="center">
   <img src="images/11.png" alt="output_11" width="700" height="500">
 </div>
