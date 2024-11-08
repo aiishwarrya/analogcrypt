@@ -223,7 +223,8 @@ In this case, both `Input A` and `Input B` are **low (0)**. As expected, the out
 <div align="center">
   <img src="images/01 (2).png" alt="output_01" width="700" height="500">
 </div>
-Here, `Input A` is **low (0)**, and `Input B` is **high (1)**. The output toggles to **high (1)**, confirming XOR functionality.
+
+Here, `Input A` is **low (0)** and `Input B` is **high (1)**. The output toggles to **high (1)**, confirming XOR functionality.
 
 ### **Waveform for Input (10) and output 1.8**
 <div align="center">
