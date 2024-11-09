@@ -256,6 +256,11 @@ In this analysis, the output voltage (V_out) is measured to confirm that the out
   <img src="images/dcanalysis2.png" alt="output2" width="700" height="500">
 </div>
 
+### Pulse Output
+
+<div align="center">
+  <img src="images/pulse output.png" alt="outputpilse" width="700" height="500">
+</div>
 
 
 ## **Conclusion**
