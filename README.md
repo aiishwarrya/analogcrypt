@@ -69,7 +69,7 @@ Make sure you have the following software and libraries installed:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Analog-XOR-Cryptographic-Circuit.git
+git clone https://github.com/aiishwarrya/Analog-XOR-Cryptographic-Circuit.git
 
 # Change directory
 cd Analog-XOR-Cryptographic-Circuit
