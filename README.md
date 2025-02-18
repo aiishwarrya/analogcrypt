@@ -320,8 +320,8 @@ The development of an analog XOR gate with cryptographic capabilities has signif
   - **Why**: Industrial systems often face harsh conditions where digital circuits may be vulnerable to noise or interference.
   - **How**: Analog circuits like the XOR gate have better resilience to noise and temperature fluctuations, providing reliable security solutions in industrial control systems.
 </p>
----
 
+---
 
 ## Related Work
 
